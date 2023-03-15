@@ -7,8 +7,7 @@ import java.util.List;
 
 public class HomePage extends BasePage{
 
-    @FindBy(xpath = "//div[@class='category-cards']/div[1]")
-    public WebElement elements;
+
 
     @FindBy(xpath = "//div[@class='category-cards']/div[2]")
     public WebElement forms;
@@ -24,6 +23,8 @@ public class HomePage extends BasePage{
 
     @FindBy(xpath = "//div[@class='category-cards']/div[6]")
     public WebElement bookStoreApp;
+    @FindBy(xpath = "//div[@class='category-cards']/div[1]")
+    public WebElement elements;
 
     @FindBy(xpath = "//a[@href='https://www.toolsqa.com/selenium-training/']")
     public WebElement seleniumJoin;
