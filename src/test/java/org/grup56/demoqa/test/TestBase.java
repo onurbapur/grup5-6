@@ -16,6 +16,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
@@ -38,13 +40,14 @@ public class TestBase {
 
         report.attachReporter(htmlReporter);
 
-        htmlReporter.config().setReportName("Audit Smoke Test");
+        htmlReporter.config().setReportName("Grup56 DemoQA.com Smoke Test");
 
         //Set environment information --> Test Name, Tester Name, Browser, Test Steps (Admin/User), Test Data, Date and Time, Operating System, Result
-        report.setSystemInfo("Environment","Production");
+        report.setSystemInfo("Environment","QA");
         report.setSystemInfo("Browser", ConfigurationReader.get("browser"));
         report.setSystemInfo("OS", System.getProperty("os.name"));
-        report.setSystemInfo("Test Engineer","Ihsan");
+        report.setSystemInfo("Test Engineer","Onur");
+        report.setSystemInfo("Date/Time",new SimpleDateFormat("yyyyMMddhhmmss").format(new Date()));
 
     }
 
@@ -74,6 +77,6 @@ public class TestBase {
 
         }
 
-        Driver.closeDriver();
+       // Driver.closeDriver();
     }
 }
