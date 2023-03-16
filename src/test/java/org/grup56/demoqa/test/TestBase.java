@@ -61,7 +61,7 @@ public class TestBase {
         driver = Driver.get();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wait = new WebDriverWait(Driver.get(),10);
-        actions = new Actions(driver);
+        actions = new Actions(Driver.get());
         driver.get(ConfigurationReader.get("url"));
     }
 
