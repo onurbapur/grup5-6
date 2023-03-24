@@ -26,8 +26,6 @@ public class BasePageTest extends TestBase {
         extentLogger.info("verify that the currentUrl is \"https://demoqa.com/\"");
         Assert.assertEquals(homePage.getCurUrl(), "https://demoqa.com/");
 
-
-
         extentLogger.info("PASSED");
     }
      /*  Test2

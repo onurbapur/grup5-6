@@ -18,7 +18,6 @@ public abstract class BasePage {
     public WebElement footer;
 
 
-
     public String getCurUrl(){
         return Driver.get().getCurrentUrl();
     }

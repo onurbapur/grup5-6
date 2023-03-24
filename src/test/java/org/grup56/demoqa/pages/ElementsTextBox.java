@@ -23,5 +23,4 @@ public class ElementsTextBox extends BasePage{
     @FindBy(id="output")
     public WebElement outPutBox;
 
-
 }

@@ -1,10 +1,8 @@
 package org.grup56.demoqa.test.task02_Elements_TextBox;
 
 import org.grup56.demoqa.pages.ElementsTextBox;
-import org.grup56.demoqa.pages.ElementsWidgets;
 import org.grup56.demoqa.pages.HomePage;
 import org.grup56.demoqa.test.TestBase;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

@@ -93,6 +93,11 @@ public class TextBoxNegativeTest extends TestBase {
         extentLogger.info("Click to Submit Button");
         elementsTextBox.btnSubmit.click();
 
+        System.out.println("elementsTextBox.userEmail.getAttribute(\"validationMessage\") = " + elementsTextBox.userEmail.getAttribute("validationMessage"));
+        System.out.println("elementsTextBox.userEmail.getAttribute(\"value\") = " + elementsTextBox.userEmail.getAttribute("value"));
+        System.out.println("elementsTextBox.userEmail.getAttribute(\"placeholder\") = " + elementsTextBox.userEmail.getAttribute("placeholder"));
+        System.out.println("elementsTextBox.userEmail.getText() = " + elementsTextBox.userEmail.getText());
+
         extentLogger.info("Verify that outPutBox is not display");
         Assert.assertFalse(elementsTextBox.outPutBox.isDisplayed(), "outputbox must not be display!");
 
