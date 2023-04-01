@@ -35,7 +35,7 @@ public class CheckBoxPositiveTest extends TestBase {
         extentLogger.info("Select the Home");
         elementsCheckBox.homeCheckBox.click();
 
-        extentLogger.info("Vrify that result paragraph is not display");
+        extentLogger.info("Vrify that result paragraph is display");
         Assert.assertTrue(elementsCheckBox.result.isDisplayed(), "result must be display");
 
         //System.out.println("elementsCheckBox.result.getText() = " + elementsCheckBox.result.getText());

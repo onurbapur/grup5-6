@@ -32,7 +32,7 @@ public class RadioButtonPositive extends TestBase {
         extentLogger.info("Click to Radio Button");
         elementsRadioButton.radioButton.click();
 
-        extentLogger.info("Vrify that Radio Buttons are");
+        extentLogger.info("Verify that Radio Buttons are clickable");
         Assert.assertTrue(elementsRadioButton.yesRadio.isEnabled(), "Yes radio button must be enable");
         Assert.assertTrue(elementsRadioButton.impressiveRadio.isEnabled(), "Impressive radio button must be enable");
         Assert.assertTrue(elementsRadioButton.noRadio.isEnabled(), "No radio button must be enable");
@@ -135,6 +135,6 @@ public class RadioButtonPositive extends TestBase {
 
         extentLogger.info("Verify 'No' text");
         Assert.assertTrue(elementsRadioButton.noRadio.isSelected());
-        Assert.assertEquals(elementsRadioButton.resultText.getText(), "You have selected Impressive");
+        Assert.assertEquals(elementsRadioButton.resultText.getText(), "You have selected No");
     }
 }
